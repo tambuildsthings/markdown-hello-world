@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #markdown {
+    @apply text-black dark:text-white text-xl;
+  }
+  #markdown h1 {
+    @apply text-4xl font-extrabold tracking-tight mt-0;
+  }
+
+  #markdown h2 {
+    @apply text-3xl font-extrabold tracking-tight mt-10;
+  }
+
+  #markdown h3 {
+    @apply text-2xl font-extrabold tracking-tight mt-10;
+  }
+
+  #markdown h4 {
+    @apply mt-4 text-gray-500 mb-4;
+  }
+
+  #markdown p {
+    @apply mt-4;
+  }
+
+  #markdown blockquote {
+    @apply dark:text-blue-300 text-blue-800 italic border-l-2 ml-4 pl-2
+  }
+
+  #markdown ul,
+  #markdown ol {
+    @apply ml-6  list-inside;
+  }
+  #markdown ul {
+    @apply list-disc;
+  }
+  #markdown ol {
+    @apply list-decimal;
+  }
+  #markdown li {
+    @apply pt-2;
+  }
+
+  #markdown a {
+    @apply text-pink-300;
+  }
+
+  #markdown code {
+    @apply text-red-500 font-mono;
+  }
+
+  #markdown table {
+    @apply text-green-400 mx-auto bg-slate-800;
+  }
+
+  #markdown tr {
+    @apply border-b border-yellow-300;
+  }
+
+  #markdown th {
+    @apply pr-6 text-center;
+  }
+}
